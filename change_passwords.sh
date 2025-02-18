@@ -15,7 +15,7 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 # Users
-users=("root" "charmander" "squirtle" "bulbasaur")
+users=("charmander" "squirtle" "bulbasaur")
 
 # Function to securely clear variables
 secure_clear() {
