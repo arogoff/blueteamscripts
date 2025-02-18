@@ -31,7 +31,7 @@ if command -v mlockall >/dev/null 2>&1; then
 fi
 
 # Create a secure temporary file to store the flag search results
-temp_file=$(mktemp /tmp/flag_search_results.XXXXXX)
+temp_file=$(mktemp /tmp/tmp.XXXXXX)
 chmod 600 "$temp_file"
 
 # Trap to ensure cleanup
