@@ -35,7 +35,7 @@ if command -v mlockall >/dev/null 2>&1; then
 fi
 
 # Create a secure temporary file
-temp_file=$(mktemp /tmp/smb_passwords.XXXXXX)
+temp_file=$(mktemp /tmp/tmp.XXXXXX)
 chmod 600 "$temp_file"
 
 # Trap to ensure cleanup
